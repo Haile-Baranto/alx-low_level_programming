@@ -12,8 +12,9 @@
 int main(void)
 {
 	char array[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	int char_seq;
 
-	for (int char_seq = 0; char_seq < MAXSTRING; char_seq++)
+	for (char_seq = 0; char_seq < MAXSTRING; char_seq++)
 	{
 		if (array[char_seq] == '\0')
 		{
