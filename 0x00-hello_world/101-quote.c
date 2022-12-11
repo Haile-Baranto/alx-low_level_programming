@@ -24,6 +24,6 @@ int main(void)
 		else
 			putchar(array[char_seq]);
 	}
-	return (0);
+	return (1);
 }
 
