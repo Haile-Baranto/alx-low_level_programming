@@ -15,7 +15,7 @@ int main(void)
 
 	for (counter = 0; counter  < 10; counter += 1)
 	{
-		putchar(counter + '0');
+		putchar(counter + '0'); /* add 0 to find ASCII code of each numbers */
 
 	}
 	putchar('\n');
