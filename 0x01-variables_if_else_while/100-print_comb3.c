@@ -9,63 +9,20 @@
 
 int main(void)
 {
-	int num;
+	int num1;
+	int num2;
+	int intial = 1;
 
-	for (num = 1; num < 10; num++)
+	for (num1 = 0; num1 < 10; num1++)
 	{
-		putchar('0');
-		putchar(num + '0');
-		putchar(',');
-		putchar(' ');
-	}
-	for (num = 2; num < 10; num++)
-	{
-		putchar('1');
-		putchar(num + '0');
-		putchar(',');
-		putchar(' ');
-	}
-	for (num = 3; num < 10; num++)
-	{
-		putchar('2');
-		putchar(num + '0');
-		putchar(',');
-		putchar(' ');
-	}
-	for (num = 5; num < 10; num++)
-	{
-		putchar('4');
-		putchar(num + '0');
-		putchar(',');
-		putchar(' ');
-	}
-	for (num = 6; num < 10; num++)
-	{
-		putchar('5');
-		putchar(num + '0');
-		putchar(',');
-		putchar(' ');
-	}
-	for (num = 7; num < 10; num++)
-	{
-		putchar('6');
-		putchar(num + '0');
-		putchar(',');
-		putchar(' ');
-	}
-	for (num = 8; num  < 10; num++)
-	{
-		putchar('7');
-		putchar(num + '0');
-		putchar(',');
-		putchar(' ');
-	}
-	for (num = 9; num < 10; num++)
-	{
-		putchar('8');
-		putchar(num + '0');
-		putchar(',');
-		putchar(' ');
+		for(num2 = intial; num2 < 10; num2++)
+		{
+			putchar(num1 + '0');
+			putchar(num2 + '0');
+			putchar(',');
+			putchar(' ');
+		}
+		++intial; 
 	}
 	putchar('\n');
 	return (0);
