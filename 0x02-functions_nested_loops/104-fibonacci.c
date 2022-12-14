@@ -1,31 +1,30 @@
 #include <stdio.h>
-
 /**
- * main - prints out the fibonacci of the first 89 numbers
- * The numbers wiil be separated by comma followed space
- * Return: return 0
+ * main - Entry point
+ *
+ * The program prints the first 98 fibonacci numbers starting 1 and 2
+ *
+ * Return: Always 0
  */
 int main(void)
 {
-	unsigned int a;
-	unsigned int b;
-	int count;
-	unsigned int result;
+	unsigned long int num1;
+	unsigned long int num2;
+	unsigned long int sum;
+	char c;
 
-	a = 0;
-	b = 1;
-	count = 0;
-	result = 0;
-
-	for (count = 0; count <= 98; count++)
+	num1 = 0;
+	num2 = 1;
+	c = 1;
+	for (c = 1; c <= 98; c++)
 	{
-		if (count == 98)
-			printf("%u", a);
+		sum = num1 + num2;
+		if (c != 98)
+			printf("%lu, ", sum);
 		else
-			printf("%u, ", a);
-		result = a + b;
-		a = b;
-		b = result;
+			printf("%lu", sum);
+		num1 = num2;
+		num2 = sum;
 	}
 	printf("\n");
 	return (0);
