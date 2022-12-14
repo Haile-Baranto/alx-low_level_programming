@@ -19,10 +19,14 @@ int main(void)
 
 	for (count = 0; count <= 98; count++)
 	{
-		printf("%u, ", a);
+		if (count == 98)
+			printf("%u", a);
+		else
+			printf("%u, ", a);
 		result = a + b;
 		a = b;
 		b = result;
 	}
+	printf("\n");
 	return (0);
 }
