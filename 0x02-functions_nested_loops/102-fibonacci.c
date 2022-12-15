@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	unsigned  int num1;
-	unsigned  int num2;
-	unsigned  int sum;
+	long  int num1;
+	long  int num2;
+	long  int sum;
 	char c;
 
 	num1 = 0;
@@ -20,9 +20,9 @@ int main(void)
 	{
 		sum = num1 + num2;
 		if (c != 50)
-			printf("%u, ", sum);
+			printf("%li, ", sum);
 		else
-			printf("%u", sum);
+			printf("%li", sum);
 		num1 = num2;
 		num2 = sum;
 	}
