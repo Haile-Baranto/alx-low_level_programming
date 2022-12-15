@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	unsigned long int num1;
-	unsigned long int num2;
-	unsigned long int sum;
+	long double num1;
+	long double num2;
+	long double sum;
 	char c;
 
 	num1 = 0;
@@ -20,9 +20,9 @@ int main(void)
 	{
 		sum = num1 + num2;
 		if (c != 98)
-			printf("%lu, ", sum);
+			printf("%.0Lf, ", sum);
 		else
-			printf("%lu", sum);
+			printf("%.0Lf", sum);
 		num1 = num2;
 		num2 = sum;
 	}
