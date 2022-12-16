@@ -13,7 +13,7 @@ void print_triangle(int size)
 	char count2;
 	char hash;
 	char temp;
-	
+
 	count1 = size;
 	temp = size;
 	if (size > 0)
