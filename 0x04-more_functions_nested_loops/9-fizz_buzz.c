@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * main - prints 1 -100 but for multiple 3 print "Fizz"
  * for multiple of 5 Buz for multiple of both 3 and 5
