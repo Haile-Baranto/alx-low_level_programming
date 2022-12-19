@@ -7,22 +7,26 @@
  * Description: can use only _putchar
  */
 
-void rev_string(char *s)
-{ 
-	char ch;
-	int right;
-	int len;
-	int left;
 
-	len = 0;
-	for (len = 0; s[len] != '\0'; len++)
+void rev_string(char *s)
+{
+	int i;
+	char tmp;
+	int leftEnd;
+	int rightEnd;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		;
+		i += 1;
 	}
-	 for (len--, left = 0; left < len / 2; right--, left++)
-	 {
-		 ch = s[left];
-		s[left] = s[right];
-		 s[right] = ch;
-	 }
+	leftEnd = 0;
+	rightEnd = i - 2;
+	for (i = leftEnd; i < rightEnd; i++)
+	{
+		tmp = s[i];
+		s[i] = s[rightEnd];
+		s[rightEnd] = tmp;
+		rightEnd--;
+	}
 }
+
