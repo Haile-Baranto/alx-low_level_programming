@@ -4,7 +4,7 @@
  * _strcmp - compares two strings
  * @s1: pointer to the first string
  * @s2 pointer to the first string
- * Return: 1 if the first non maching charachetrs of string one is 
+ * Return: 1 if the first non maching charachetrs of string one is
  * in ascci greater than that of s2. 0 if they are equal and -1 if
  * s1 is greater
  * Description: using library function is not allowed
