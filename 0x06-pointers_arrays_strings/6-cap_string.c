@@ -10,7 +10,9 @@ char *cap_string(char *str)
 	int index;
 	int scape;
 	int temp;
-	char special_symbols[] = ",;.!?(){}\n\t\" ";
+	char special_symbols[20];
+
+	special_symbols = ",;.!?(){}\n\t\" ";
 	temp = 0
 		;
 	for (index = 0; str[index] != '\0'; index++)
