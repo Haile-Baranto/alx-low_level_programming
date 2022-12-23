@@ -10,18 +10,15 @@ char *cap_string(char *str)
 	int index;
 	int scape;
 	int temp;
-	char special_symbols[20];
-
-	special_symbols = ",;.!?(){}\n\t\" ";
-	temp = 0
-		;
+	char symbols[20] = ",;.!?(){}\n\t\" ";
+	temp = 0;
 	for (index = 0; str[index] != '\0'; index++)
 	{
 		if (str[0] > 96 && str[0] < 123)
 			temp = 1;
-		for (scape = 0; special_symbols[scape] != '\0'; scape++)
+		for (scape = 0; symbols[scape] != '\0'; scape++)
 		{
-			if (special_symbols[scape] == str[index])
+			if (symbols[scape] == str[index])
 				temp = 1;
 		}
 
