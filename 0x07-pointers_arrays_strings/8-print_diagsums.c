@@ -20,8 +20,6 @@ void print_diagsums(int *a, int size)
 		if (i % (size + 1) == 0)
 			main_diagonal += a[i];
 	}
-	
-	
 	for (j = 0; j < size * size; j++)
 	{
 		if (j % (size - 1) == 0 && j != (size * size - 1) && j != 0)
