@@ -20,12 +20,12 @@ int _sqrt_recursion(int n)
 
 int _sqrt(int num, int root)
 {
-	int sqr;
+	int sq;
 
-	sqr = root * root;
-	if (sqr == num)
+	sq = root * root;
+	if (sq == num)
 		return (root);
-	else if (sqr < num)
-		_sqrt(num, root + 1);
+	else if (sq < num)
+		return (_sqrt(num, root + 1));
 	return (-1);
 }
