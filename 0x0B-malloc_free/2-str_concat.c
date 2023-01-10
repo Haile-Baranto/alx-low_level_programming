@@ -27,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		;
 	}
-	newPointer = malloc((size1 + size2) * sizeof(*s1) + 1);
+	newPointer = malloc(size1 * sizeof(*s1) + size2 * sizeof(s2) + 1);
 	if (newPointer == NULL)
 		return (NULL);
 	for (counter1 = 0; counter1 < size1; counter1++)
