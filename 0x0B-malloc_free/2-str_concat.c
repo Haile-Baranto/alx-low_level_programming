@@ -34,9 +34,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		newPointer[counter1] = s1[counter1];
 	}
-	for (counter2 = 0; counter2 < size2 + 1; counter2++)
-	{
-		newPointer[size1 + counter2] = s2[counter2];
-	}
+        for (counter2 = 0; counter2 < size2 + 1; counter2++)
+        {
+                newPointer[size1 + counter2] = s2[counter2];
+        }
+
 	return (newPointer);
 }
