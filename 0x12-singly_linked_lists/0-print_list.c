@@ -6,20 +6,18 @@
  * Return: the number of nodes
  * Description: if str is NULL print 0(nil) and you can use printf
  */
+
 size_t print_list(const list_t *h)
 {
 	const list_t *temp = h;
-	size_t length = 0;
+	size_t number = 0;;
 
-	if (temp == NULL)
-		return (0);
 	while (temp != NULL)
 	{
-		if (temp->str == NULL)
-			printf("[0] (nil)\n");
 		printf("[%d] %s\n", temp->len, temp->str);
 		temp = temp->next;
-		length++;
+		number++;
 	}
-	return (length);
+
+	return (number);
 }
